@@ -9,20 +9,31 @@ import android.widget.Button;
 
 public class Practice extends AppCompatActivity {
 
-    Button b1;
+    Button b1,b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practice);
 
         b1=findViewById(R.id.b1);
+        b2=findViewById(R.id.b2);
 
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent obj=new Intent(Practice.this, Practice1.class);
-                startActivity(obj);
-            }
-        });
+
+
+
     }
+
+    public void click(View v)
+    {
+        switch (v.getId())
+        {
+            case R.id.b1:
+                Intent obj=new Intent(Practice.this, Practice1.class);
+                obj.putExtra("value", "Halqiyah");
+                obj.putExtra("value1","p1");
+                startActivity(obj);
+
+        }
+    }
+
 }
