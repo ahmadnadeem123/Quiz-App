@@ -40,7 +40,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="245dp"
-        android:text="Emission Points:"
+        android:text="Categories:"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,61 +50,75 @@
 
     <Button
         android:id="@+id/b2"
-        android:layout_width="142dp"
+        android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="15dp"
-        android:text="2)Lahatiyah"
+        android:layout_marginTop="17dp"
+        android:text="    2)Lahatiyah"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b1" />
 
     <Button
         android:id="@+id/b4"
-        android:layout_width="142dp"
+        android:layout_width="200dp"
         android:layout_height="40dp"
-        android:text="4)Tarfiyah"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="436dp" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="17dp"
+        android:text="   4)Tarfiyah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b3" />
 
     <Button
         android:id="@+id/b5"
-        android:layout_width="142dp"
+        android:layout_width="200dp"
         android:layout_height="40dp"
-        android:text="5)Nit-eeyah"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="496dp" />
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="17dp"
+        android:text="   5)Nit-eeyah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b4" />
 
     <Button
         android:id="@+id/b6"
-        android:layout_width="142dp"
+        android:layout_width="200dp"
         android:layout_height="40dp"
-        android:text="6)Lisaveyah"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="546dp" />
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="17dp"
+        android:text="     6)Lisaveyah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b5" />
 
     <Button
         android:id="@+id/b7"
-        android:layout_width="142dp"
+        android:layout_width="200dp"
         android:layout_height="40dp"
-        android:text="6)Lisaveyah"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="546dp" />
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="17dp"
+        android:text="7)Ghunna"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b6" />
 
     <Button
         android:id="@+id/b3"
-        android:layout_width="140dp"
-        android:layout_height="56dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="17dp"
         android:text="3)Shajariyah-Haafiyah"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="360dp" />
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b2" />
 
     <Button
         android:id="@+id/b1"
-        android:layout_width="142dp"
+        android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        android:text="1)Halqiyah"
+        android:text="   1)Halqiyah"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
