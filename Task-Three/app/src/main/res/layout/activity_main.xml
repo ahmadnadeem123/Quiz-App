@@ -8,45 +8,54 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="64dp"
-        android:layout_height="25dp"
-        android:text="Name"
+        android:layout_width="203dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="28dp"
+        android:text="Name: Ahmad Nadeem"
         android:textAlignment="viewStart"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="60dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="134dp"
-        android:layout_height="29dp"
-        android:text="BSEF18A507"
-        android:textAlignment="viewStart"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="113dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="64dp"
-        android:layout_height="25dp"
-        android:text="Roll No"
+        android:layout_width="206dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="80dp"
+        android:text=" Roll No: BSEF18A507"
         android:textAlignment="viewStart"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="113dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="136dp"
-        android:layout_height="29dp"
-        android:text="Ahmad Nadeem"
-        android:textAlignment="viewStart"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="60dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="86dp"
+        android:src="@drawable/intent_pic"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="221dp"
+        android:text="Go To Repository"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
