@@ -63,6 +63,7 @@
         android:layout_height="45dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:onClick="click"
         android:text="Makharij 8,9,10"
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,6 +75,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
+        android:onClick="click"
         android:text="Makharij 11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b3" />
@@ -84,6 +86,7 @@
         android:layout_height="45dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:onClick="click"
         android:text="Makharij 12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b4" />
@@ -94,6 +97,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
+        android:onClick="click"
         android:text="Makharij 13"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,6 +109,7 @@
         android:layout_height="45dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:onClick="click"
         android:text="Makharij 14"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,6 +121,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
+        android:onClick="click"
         android:text="Makharij 15,16"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,6 +133,7 @@
         android:layout_height="45dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:onClick="click"
         android:text="Makharij 17"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,6 +145,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
+        android:onClick="click"
         android:text="Makharij 6,7"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
@@ -154,4 +162,26 @@
         android:textAlignment="viewStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b9" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="63dp"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button6"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
