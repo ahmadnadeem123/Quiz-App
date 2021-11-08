@@ -103,7 +103,8 @@ public class Quiz_2 extends AppCompatActivity {
                 int counter= Integer.parseInt(obj.getStringExtra("count"));
                 counter=counter + count;
 
-                answer="1) " + answer + "  2) " + ans;
+                answer="1) " + answer +"\n" +  "2) " + ans;
+
 
                 Intent obj2=new Intent(Quiz_2.this, Quiz_3.class);
                 obj2.putExtra("answer" , answer);
