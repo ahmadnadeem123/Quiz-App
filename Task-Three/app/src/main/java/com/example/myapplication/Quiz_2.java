@@ -21,6 +21,7 @@ public class Quiz_2 extends AppCompatActivity {
 
 
         b1=findViewById(R.id.next1);
+        b1.setText("Next");
         b2=findViewById(R.id.q1);
         b3=findViewById(R.id.q2);
         b4=findViewById(R.id.q3);
