@@ -11,17 +11,19 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class Quiz_3 extends AppCompatActivity {
+public class Quiz_4 extends AppCompatActivity {
+
     Button b1;
     Button b2, b3, b4, b5;
     TextView v1;
     String ans;
     int count;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz3);
+        setContentView(R.layout.activity_quiz4);
 
 
         b2 = findViewById(R.id.bt1);
@@ -32,7 +34,7 @@ public class Quiz_3 extends AppCompatActivity {
         v1 = findViewById(R.id.question3);
 
         Intent obj = getIntent();
-        String x = obj.getStringExtra("valued").toString();
+        String x = obj.getStringExtra("value3").toString();
         v1.setText(x);
 
         if (x.equals("0")) {
@@ -89,32 +91,18 @@ public class Quiz_3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent obj4 = getIntent();
-                String x = obj4.getStringExtra("valued").toString();
-                int value = Integer.parseInt(x);
-                int ran = 0;
-
-
-                do {
-                    Random rand = new Random();
-                    ran = rand.nextInt(4);
-                } while (ran == value);
-
-
-
 
 
                 Intent obj = getIntent();
-                String answer = obj.getStringExtra("answer").toString();
-                int counter = Integer.parseInt(obj.getStringExtra("counter"));
+                String answer = obj.getStringExtra("answered").toString();
+                int counter = Integer.parseInt(obj.getStringExtra("countered"));
                 counter = counter + count;
 
-                answer = answer + "  3) " + ans;
+                answer = answer + "  4) " + ans;
 
-                Intent obj2 = new Intent(Quiz_3.this, Quiz_4.class);
-                obj2.putExtra("answered", answer);
-                obj2.putExtra("countered", String.valueOf(counter));
-                obj2.putExtra("value3", (String.valueOf(ran)));
+                Intent obj2 = new Intent(Quiz_4.this, Result.class);
+                obj2.putExtra("result", answer);
+                obj2.putExtra("correctcount", String.valueOf(counter));
 
 
                 startActivity(obj2);
@@ -123,74 +111,72 @@ public class Quiz_3 extends AppCompatActivity {
             }
         });
 
-    }
 
+    }
 
     public void click(View v) {
-        switch(v.getId())
+        switch (v.getId()) {
+            case R.id.bt1:
+                String x = b2.getText().toString();
+                if (ans.equals(x)) {
+                    b2.setBackgroundColor(Color.GREEN);
+                    count = 1;
 
-       {
-           case R.id.bt1:
-            String x = b2.getText().toString();
-            if (ans.equals(x)) {
-                b2.setBackgroundColor(Color.GREEN);
-                count = 1;
+                } else {
+                    b2.setBackgroundColor(Color.RED);
+                    count = 0;
+                }
+                b3.setEnabled(false);
+                b4.setEnabled(false);
+                b5.setEnabled(false);
 
-            } else {
-                b2.setBackgroundColor(Color.RED);
-                count = 0;
-            }
-            b3.setEnabled(false);
-            b4.setEnabled(false);
-            b5.setEnabled(false);
+                break;
 
-            break;
+            case R.id.bt2:
+                String x2 = b3.getText().toString();
+                if (ans.equals(x2)) {
+                    b3.setBackgroundColor(Color.GREEN);
+                    count = 1;
+                } else {
+                    b3.setBackgroundColor(Color.RED);
+                    count = 0;
+                }
+                b2.setEnabled(false);
+                b4.setEnabled(false);
+                b5.setEnabled(false);
 
-           case R.id.bt2:
-            String x2 = b3.getText().toString();
-            if (ans.equals(x2)) {
-                b3.setBackgroundColor(Color.GREEN);
-                count = 1;
-            } else {
-                b3.setBackgroundColor(Color.RED);
-                count = 0;
-            }
-            b2.setEnabled(false);
-            b4.setEnabled(false);
-            b5.setEnabled(false);
-
-            break;
+                break;
 
             case R.id.bt3:
-            String x3 = b4.getText().toString();
-            if (ans.equals(x3)) {
-                b4.setBackgroundColor(Color.GREEN);
-                count = 1;
-            } else {
-                b4.setBackgroundColor(Color.RED);
-                count = 0;
-            }
-            b3.setEnabled(false);
-            b2.setEnabled(false);
-            b5.setEnabled(false);
+                String x3 = b4.getText().toString();
+                if (ans.equals(x3)) {
+                    b4.setBackgroundColor(Color.GREEN);
+                    count = 1;
+                } else {
+                    b4.setBackgroundColor(Color.RED);
+                    count = 0;
+                }
+                b3.setEnabled(false);
+                b2.setEnabled(false);
+                b5.setEnabled(false);
 
-            break;
+                break;
 
-           case R.id.bt4:
-            String x4 = b5.getText().toString();
-            if (ans.equals(x4)) {
-                b5.setBackgroundColor(Color.GREEN);
-                count = 1;
-            } else {
-                b5.setBackgroundColor(Color.RED);
-                count = 0;
-            }
-            b3.setEnabled(false);
-            b4.setEnabled(false);
-            b2.setEnabled(false);
+            case R.id.bt4:
+                String x4 = b5.getText().toString();
+                if (ans.equals(x4)) {
+                    b5.setBackgroundColor(Color.GREEN);
+                    count = 1;
+                } else {
+                    b5.setBackgroundColor(Color.RED);
+                    count = 0;
+                }
+                b3.setEnabled(false);
+                b4.setEnabled(false);
+                b2.setEnabled(false);
 
-            break;
+                break;
+        }
+
     }
-
-    }
-  }
+}

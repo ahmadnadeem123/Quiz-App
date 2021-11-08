@@ -108,7 +108,8 @@ public class Quiz_2 extends AppCompatActivity {
                 Intent obj2=new Intent(Quiz_2.this, Quiz_3.class);
                 obj2.putExtra("answer" , answer);
                 obj2.putExtra("counter", String.valueOf(counter));
-                obj2.putExtra("valuee", (String.valueOf(ran)));
+
+                obj2.putExtra("valued", (String.valueOf(ran)));
 
                 startActivity(obj2);
 

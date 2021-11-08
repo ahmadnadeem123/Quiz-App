@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Quiz_3">
+    tools:context=".Quiz_4">
 
 
     <TextView
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="39dp"
-        android:text="3/4 Question"
+        android:text="4/4 Question"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/question3"
@@ -124,10 +124,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="100dp"
-        android:text="Next"
+        android:text="END"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt4" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
