@@ -17,6 +17,7 @@ public class Quiz_1 extends AppCompatActivity {
     Button b2, b3, b4, b5;
     ImageView v1;
     String ans;
+    int count;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,9 +102,15 @@ public class Quiz_1 extends AppCompatActivity {
 
                 Intent obj = new Intent(Quiz_1.this, Quiz_2.class);
                 obj.putExtra("value1", String.valueOf(ran));
+                obj.putExtra("correct", ans.toString());
+                obj.putExtra("count",String.valueOf(count));
                 startActivity(obj);
             }
         });
+
+
+
+
 
     }
 
@@ -113,8 +120,10 @@ public class Quiz_1 extends AppCompatActivity {
                 String x = b2.getText().toString();
                 if (ans.equals(x)) {
                     b2.setBackgroundColor(Color.GREEN);
+                    count=1;
                 } else {
                     b2.setBackgroundColor(Color.RED);
+                    count=0;
                 }
                 b3.setEnabled(false);
                 b4.setEnabled(false);
@@ -126,8 +135,10 @@ public class Quiz_1 extends AppCompatActivity {
                 String x2 = b3.getText().toString();
                 if (ans.equals(x2)) {
                     b3.setBackgroundColor(Color.GREEN);
+                    count=1;
                 } else {
                     b3.setBackgroundColor(Color.RED);
+                    count=0;
                 }
                 b2.setEnabled(false);
                 b4.setEnabled(false);
@@ -139,8 +150,10 @@ public class Quiz_1 extends AppCompatActivity {
                 String x3 = b4.getText().toString();
                 if (ans.equals(x3)) {
                     b4.setBackgroundColor(Color.GREEN);
+                    count=1;
                 } else {
                     b4.setBackgroundColor(Color.RED);
+                    count=0;
                 }
                 b3.setEnabled(false);
                 b2.setEnabled(false);
@@ -152,8 +165,10 @@ public class Quiz_1 extends AppCompatActivity {
                 String x4 = b5.getText().toString();
                 if (ans.equals(x4)) {
                     b5.setBackgroundColor(Color.GREEN);
+                    count=1;
                 } else {
                     b5.setBackgroundColor(Color.RED);
+                    count=0;
                 }
                 b3.setEnabled(false);
                 b4.setEnabled(false);
