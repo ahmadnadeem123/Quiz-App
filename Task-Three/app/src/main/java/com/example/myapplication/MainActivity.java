@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     Button b1,b2,b3;
@@ -23,7 +25,13 @@ public class MainActivity extends AppCompatActivity {
     b3.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+
+            Random rand=new Random();
+            int ran=rand.nextInt(4);
+            
+
             Intent obj=new Intent(MainActivity.this, Quiz_1.class);
+            obj.putExtra("value", (String.valueOf(ran)));
             startActivity(obj);
         }
     });
