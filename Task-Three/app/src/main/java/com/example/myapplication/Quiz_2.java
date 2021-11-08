@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import java.util.Random;
+
 public class Quiz_2 extends AppCompatActivity {
 
     Button b1;
@@ -90,6 +92,12 @@ public class Quiz_2 extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Random rand=new Random();
+                int ran=rand.nextInt(4);
+
+
+
                 Intent obj=getIntent();
                 String answer= obj.getStringExtra("correct").toString();
                 int counter= Integer.parseInt(obj.getStringExtra("count"));
@@ -100,6 +108,8 @@ public class Quiz_2 extends AppCompatActivity {
                 Intent obj2=new Intent(Quiz_2.this, Quiz_3.class);
                 obj2.putExtra("answer" , answer);
                 obj2.putExtra("counter", String.valueOf(counter));
+                obj2.putExtra("valuee", (String.valueOf(ran)));
+
                 startActivity(obj2);
 
 
