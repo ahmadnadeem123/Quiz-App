@@ -102,7 +102,7 @@ public class Quiz_4 extends AppCompatActivity {
 
                 Intent obj2 = new Intent(Quiz_4.this, Result.class);
                 obj2.putExtra("result", answer);
-                obj2.putExtra("correctcount", String.valueOf(counter));
+                obj2.putExtra("correction", String.valueOf(counter));
 
 
                 startActivity(obj2);

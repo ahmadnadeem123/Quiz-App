@@ -6,4 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".Result">
 
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Makhārij Al-Hurūf"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:text="Correct Answers:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="232dp"
+        android:layout_height="46dp"
+        android:text="Your Score:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:text="ss"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="343dp"
+        android:layout_height="66dp"
+        android:text="t1 \n t"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="283dp"
+        android:layout_height="65dp"
+        android:text="Share Result"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="510dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
