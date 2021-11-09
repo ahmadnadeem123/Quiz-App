@@ -29,16 +29,7 @@ public class Practice1 extends AppCompatActivity {
         t1.setText(obj.getStringExtra("value").toString());
         v1=findViewById(R.id.v1);
         b1=findViewById(R.id.button3);
-        b2=findViewById(R.id.button4);
 
-
-        b2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-                moveTaskToBack(true);
-            }
-        });
 
 
         String x=obj.getStringExtra("value1").toString();
@@ -91,7 +82,7 @@ public class Practice1 extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent obj=new Intent(Practice1.this, Practice.class);
+                Intent obj=new Intent(Practice1.this, MainActivity.class);
                 startActivity(obj);
             }
         });
