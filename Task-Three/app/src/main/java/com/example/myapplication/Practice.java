@@ -25,24 +25,6 @@ public class Practice extends AppCompatActivity {
         b8=findViewById(R.id.b8);
         b9=findViewById(R.id.b9);
         b10=findViewById(R.id.b10);
-        b11=findViewById(R.id.button6);
-        b12=findViewById(R.id.button7);
-
-        b11.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent obj=new Intent(Practice.this, MainActivity.class);
-                startActivity(obj);
-            }
-        });
-
-        b12.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-                moveTaskToBack(true);
-            }
-        });
 
 
 

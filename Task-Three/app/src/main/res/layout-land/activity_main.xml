@@ -12,14 +12,12 @@
         android:layout_width="203dp"
         android:layout_height="42dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginTop="16dp"
         android:text="Name: Ahmad Nadeem"
         android:textAlignment="viewStart"
         android:textColor="#F6F4F4"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,32 +25,24 @@
         android:id="@+id/textView4"
         android:layout_width="206dp"
         android:layout_height="43dp"
-        android:layout_marginStart="-5dp"
-        android:layout_marginTop="-25dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="248dp"
         android:text=" Roll No: BSEF18A507"
         android:textAlignment="viewStart"
         android:textColor="#F1EAEA"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/v1"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/v1"
-        android:layout_width="350dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="86dp"
+        android:layout_width="376dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="80dp"
         android:src="@drawable/intent_pic"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
@@ -60,40 +50,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#2196F3"
         android:text="Go To Repository"
         app:cornerRadius="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v1" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="108dp"
         android:layout_height="45dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="283dp"
-        android:layout_marginBottom="224dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
         android:backgroundTint="#2196F3"
         android:text="Practice"
         app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="108dp"
         android:layout_height="45dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="275dp"
-        android:layout_marginBottom="144dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#2196F3"
         android:text="Quiz"
         app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

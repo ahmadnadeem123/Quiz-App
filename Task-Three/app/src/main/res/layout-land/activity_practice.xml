@@ -10,24 +10,20 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="207dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="102dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="102dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="260dp"
         android:text="Makhārij Al-Hurūf"
         android:textColor="#FFFBFB"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="346dp"
-        android:layout_height="65dp"
+        android:layout_width="704dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="There are 17 emission points (makhārij al-ḥurūf), located in various regions of: Throat, Tongue, Lips, Nose, Mouth"
@@ -37,154 +33,132 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="33dp"
-        android:text="Emission Points:"
-        android:textColor="#DCD8D8"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
     <Button
         android:id="@+id/b2"
         android:layout_width="160dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="100dp"
         android:backgroundTint="#0669B8"
         android:onClick="click"
         android:text="Makharij 4,5"
         android:textAlignment="center"
         app:cornerRadius="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/b1" />
+        app:layout_constraintStart_toEndOf="@+id/b1"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
         android:id="@+id/b4"
         android:layout_width="160dp"
         android:layout_height="45dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:backgroundTint="#0669B8"
         android:onClick="click"
         android:text="Makharij 8,9,10"
         android:textSize="13sp"
         app:cornerRadius="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b1" />
 
     <Button
         android:id="@+id/b5"
         android:layout_width="160dp"
         android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="100dp"
         android:backgroundTint="#0669B8"
         android:onClick="click"
         android:text="Makharij 11"
         app:cornerRadius="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b3" />
+        app:layout_constraintStart_toEndOf="@+id/b4"
+        app:layout_constraintTop_toBottomOf="@+id/b2" />
 
     <Button
         android:id="@+id/b6"
         android:layout_width="160dp"
         android:layout_height="45dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="39dp"
         android:backgroundTint="#0669B8"
         android:onClick="click"
         android:text="Makharij 12"
         app:cornerRadius="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b4" />
+        app:layout_constraintTop_toBottomOf="@+id/b3" />
 
     <Button
         android:id="@+id/b7"
         android:layout_width="160dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
         android:backgroundTint="#0669B8"
         android:onClick="click"
         android:text="Makharij 13"
         android:textAlignment="center"
         app:cornerRadius="4dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b5" />
+        app:layout_constraintTop_toBottomOf="@+id/b4" />
 
     <Button
         android:id="@+id/b8"
         android:layout_width="160dp"
         android:layout_height="45dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="100dp"
         android:backgroundTint="#0669B8"
         android:onClick="click"
         android:text="Makharij 14"
+        android:textAlignment="center"
+        app:cornerRadius="4dp"
+        app:layout_constraintStart_toEndOf="@+id/b7"
+        app:layout_constraintTop_toBottomOf="@+id/b5" />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="39dp"
+        android:backgroundTint="#0669B8"
+        android:onClick="click"
+        android:text="Makharij 15,16"
         android:textAlignment="center"
         app:cornerRadius="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b6" />
 
     <Button
-        android:id="@+id/b9"
-        android:layout_width="160dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#0669B8"
-        android:onClick="click"
-        android:text="Makharij 15,16"
-        android:textAlignment="center"
-        app:cornerRadius="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b7" />
-
-    <Button
         android:id="@+id/b10"
         android:layout_width="160dp"
         android:layout_height="45dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="276dp"
         android:backgroundTint="#0669B8"
         android:onClick="click"
         android:text="Makharij 17"
         android:textAlignment="center"
         app:cornerRadius="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b8" />
 
     <Button
         android:id="@+id/b3"
         android:layout_width="160dp"
         android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
         android:backgroundTint="#0669B8"
         android:onClick="click"
         android:text="Makharij 6,7"
         android:textAlignment="center"
         app:cornerRadius="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b1" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
         android:id="@+id/b1"
         android:layout_width="160dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
         android:backgroundTint="#0669B8"
         android:onClick="click"
         android:text="Makharij 1,2,3"
         android:textAlignment="viewStart"
         app:cornerRadius="4dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
