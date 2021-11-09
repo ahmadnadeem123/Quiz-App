@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/quiz1"
     tools:context=".Quiz_4">
 
 
@@ -67,6 +68,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="19dp"
+        android:backgroundTint="#064475"
         android:onClick="click"
         android:text="Base of Tongue which is near Uvula touching the mouth roof"
         android:textSize="14sp"
@@ -82,6 +84,7 @@
         android:layout_marginStart="9dp"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="25dp"
+        android:backgroundTint="#064475"
         android:onClick="click"
         android:text="Tip of the tongue touching the base of the front 2 teeth"
         android:textSize="14sp"
@@ -97,6 +100,7 @@
         android:layout_marginStart="9dp"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="18dp"
+        android:backgroundTint="#064475"
         android:onClick="click"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/bt4"
@@ -111,6 +115,7 @@
         android:layout_marginStart="9dp"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="28dp"
+        android:backgroundTint="#064475"
         android:onClick="click"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/next2"
@@ -124,11 +129,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="100dp"
+        android:backgroundTint="#7A2020"
         android:text="END"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt4" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

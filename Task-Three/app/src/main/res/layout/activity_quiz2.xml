@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/quiz1"
     tools:context=".Quiz_2">
-
 
 
     <TextView
@@ -63,6 +63,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
+        android:backgroundTint="#064475"
         android:onClick="click"
         android:text="Halqiyah"
         app:layout_constraintEnd_toEndOf="@+id/q2"
@@ -74,6 +75,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
+        android:backgroundTint="#064475"
         android:onClick="click"
         android:text="Lahatiyah"
         app:layout_constraintEnd_toEndOf="@+id/q3"
@@ -87,6 +89,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="24dp"
+        android:backgroundTint="#064475"
         android:onClick="click"
         android:text="Shajariyah-Haafiyah"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,6 +103,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
+        android:backgroundTint="#064475"
         android:onClick="click"
         android:text="Tarfiyah"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,6 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="32dp"
+        android:backgroundTint="#046757"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

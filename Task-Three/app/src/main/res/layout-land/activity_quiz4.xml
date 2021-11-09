@@ -5,20 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/quiz1"
-    tools:context=".Quiz_3">
+    tools:context=".Quiz_4">
 
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
         android:text="Makhārij Al-Hurūf"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,114 +24,96 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginBottom="23dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="2dp"
         android:text="Quiz"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="39dp"
-        android:text="3/4 Question"
-        android:textSize="16sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="111dp"
+        android:text="4/4 Question"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/question3"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/question3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginTop="4dp"
         android:text=" أ  ة  –  Sound produced from the"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bt1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Button
         android:id="@+id/bt1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="19dp"
+        android:layout_width="600dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
         android:backgroundTint="#064475"
         android:onClick="click"
         android:text="Base of Tongue which is near Uvula touching the mouth roof"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/bt2"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question3" />
 
     <Button
         android:id="@+id/bt2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="25dp"
+        android:layout_width="600dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
         android:backgroundTint="#064475"
         android:onClick="click"
         android:text="Tip of the tongue touching the base of the front 2 teeth"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/bt3"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt1" />
 
     <Button
         android:id="@+id/bt3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="18dp"
+        android:layout_width="600dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
         android:backgroundTint="#064475"
         android:onClick="click"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/bt4"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt2" />
 
     <Button
         android:id="@+id/bt4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="28dp"
+        android:layout_width="600dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
         android:backgroundTint="#064475"
         android:onClick="click"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/next2"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt3" />
+
 
     <Button
         android:id="@+id/next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="100dp"
-        android:backgroundTint="#046757"
-        android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt4" />
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="206dp"
+        android:text="END"
+        android:backgroundTint="#7A2020"
+        app:layout_constraintStart_toEndOf="@+id/bt4"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
